@@ -1,6 +1,4 @@
-// src/models/Transaction.ts
-
-import mongoose, { Schema, models, model } from "mongoose"
+import { Schema, models, model } from "mongoose"
 
 const TransactionSchema = new Schema({
   amount: Number,

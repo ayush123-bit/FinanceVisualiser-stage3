@@ -28,7 +28,8 @@ export default function TransactionList() {
 
   const handleDelete = async (id: string) => {
     try {
-      await axios.delete(`/api/transactions/${id}`)
+     await axios.delete(`/api/transactions/delete/${id}`)
+
       setTransactions(prev => prev.filter(txn => txn._id !== id))
     } catch (err) {
       console.error("Delete failed:", err)

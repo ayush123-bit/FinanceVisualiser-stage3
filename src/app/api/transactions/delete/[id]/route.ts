@@ -2,16 +2,17 @@ import { connectDB } from "@/lib/mongodb"
 import { Transaction } from "@/models/Transaction"
 import { NextResponse } from "next/server"
 
-type Params = {
-  params: {
-    id: string
-  }
-}
+export const runtime = 'nodejs' // ✅ use Node.js runtime (fixes context.params bug)
 
-export async function DELETE(req: Request, { params }: Params) {
+export async function DELETE(
+  request: Request,
+  context: { params: { id: string } }
+) {
   try {
     await connectDB()
-    const deleted = await Transaction.findByIdAndDelete(params.id)
+    const { id } = context.params
+
+    const deleted = await Transaction.findByIdAndDelete(id)
 
     if (!deleted) {
       return NextResponse.json({ message: "Transaction not found" }, { status: 404 })
