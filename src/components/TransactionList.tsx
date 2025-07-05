@@ -1,5 +1,3 @@
-// src/components/TransactionList.tsx
-
 "use client"
 
 import { useEffect, useState } from "react"
