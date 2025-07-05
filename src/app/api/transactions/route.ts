@@ -1,5 +1,3 @@
-// src/app/api/transactions/route.ts
-
 import { connectDB } from "@/lib/mongodb"
 import { Transaction } from "@/models/Transaction"
 import { NextResponse } from "next/server"

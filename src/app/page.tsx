@@ -1,5 +1,3 @@
-// src/app/page.tsx
-
 import TransactionForm from "@/components/TransactionForm"
 import TransactionList from "@/components/TransactionList"
 import MonthlyBarChart from "@/components/MonthlyBarChart"
@@ -12,13 +10,10 @@ export default function Home() {
           Personal Finance Visualizer
         </h1>
 
-        {/* Add Transaction Form */}
-        <TransactionForm />
+       <TransactionForm />
 
-        {/* Transaction List */}
-        <TransactionList />
+       <TransactionList />
 
-        {/* Monthly Bar Chart */}
         <MonthlyBarChart />
       </div>
     </main>
