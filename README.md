@@ -137,7 +137,7 @@ personal-finance-visualizer/
 ## 🌐 Live Demo
 
 Deployed on **Vercel**:  
-👉 [https://your-vercel-project-url.vercel.app](https://your-vercel-project-url.vercel.app)
+👉 [https://finance-visualiser-stage3.vercel.app/](https://finance-visualiser-stage3.vercel.app/)
 
 ---
 
